@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CharacterSheetActivity">
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="40dp"
+        android:inputType="text"
+        android:onClick="name_alert_box"
+        android:text="Name_here"
+        app:layout_constraintStart_toEndOf="@+id/name_text"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/str_text"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:text="Strength"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:onClick="stat_num_alert_box"
+        android:id="@+id/str_input"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:inputType="numberSigned"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/str_text" />
+
+    <TextView
+        android:id="@+id/dex_text"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:text="Dexterity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/str_input"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:onClick="stat_num_alert_box"
+        android:id="@+id/dex_input"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dex_text"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/con_text"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:text="Constitution"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dex_input"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:onClick="stat_num_alert_box"
+        android:id="@+id/con_input"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/con_text"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/int_text"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:text="Intelligence"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/con_input"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:onClick="stat_num_alert_box"
+        android:id="@+id/int_input"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/int_text"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/wis_text"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:text="Wisdom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/int_input"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:onClick="stat_num_alert_box"
+        android:id="@+id/wis_input"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wis_text"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/cha_text"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:text="Charisma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wis_input"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:onClick="stat_num_alert_box"
+        android:id="@+id/cha_input"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cha_text"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+        android:id="@+id/save_char_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
